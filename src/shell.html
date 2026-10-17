@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Linguagem Aurora</title>
+<meta name="description" content="Uma linguagem funcional com inferência de tipos Hindley–Milner, compilador de bytecode e máquina virtual — escrita do zero e rodando no navegador.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+/*@@STYLE@@*/
+</style>
+</head>
+<body>
+<div class="bench">
+
+  <header class="plate">
+    <div>
+      <h1 class="wordmark">Aurora</h1>
+      <span class="plate-meta">uma linguagem inteira · @@CORE_LINES@@ linhas · zero dependências</span>
+    </div>
+    <p class="plate-thesis">Lexer, parser, inferência de tipos Hindley–Milner, compilador de bytecode e uma máquina virtual que dá para pausar em qualquer instrução — tudo escrito do zero e rodando nesta aba. Edite o programa: cada estágio roda de novo enquanto você digita.</p>
+    <button class="btn-quiet" id="open-guide" type="button">Guia da linguagem</button>
+  </header>
+
+  <section class="sheet source" aria-label="Programa">
+    <div class="examples" id="examples" role="group" aria-label="Programas de exemplo"></div>
+    <div class="source-sub" id="source-sub"></div>
+    <div class="editor" id="editor">
+      <div class="gutter" aria-hidden="true"><div class="gutter-inner" id="gutter"></div></div>
+      <div class="code">
+        <pre class="hl" id="hl" aria-hidden="true"></pre>
+        <textarea id="src" spellcheck="false" autocapitalize="off" autocomplete="off" autocorrect="off" wrap="off" aria-label="Código-fonte em Aurora" aria-describedby="note"></textarea>
+      </div>
+      <div class="tip" id="tip" role="tooltip" hidden></div>
+    </div>
+    <div class="note" id="note" aria-live="polite"></div>
+  </section>
+
+  <section class="sheet inspector" aria-label="Estágios do compilador">
+    <div class="stages" id="stages" role="tablist" aria-label="Estágios"></div>
+    <div class="panel" id="panel" role="tabpanel" tabindex="-1"></div>
+  </section>
+
+</div>
+
+<dialog class="guide" id="guide" aria-labelledby="guide-title">
+  <div class="guide-head">
+    <h2 id="guide-title">Guia da linguagem</h2>
+    <button class="btn-quiet" type="button" id="close-guide">Fechar</button>
+  </div>
+  <div class="guide-body" id="guide-body"></div>
+</dialog>
+
+<script>
+/*@@CORE@@*/
+</script>
+<script>
+/*@@EXAMPLES@@*/
+</script>
+<script>
+/*@@UI@@*/
+</script>
+</body>
+</html>
